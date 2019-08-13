@@ -1,9 +1,0 @@
--- Field-ID_SII-filter_exposuretime_chipID.fits : Final fully reduced images. The ones with large exposure times are the combination of individual exposures. See header for the description of each column.
-
--- Field-ID_exposuretime_chipID.matched.all.wcs.cat : The full catalog of matched sources (with a search radius of 2 pixels) identified in the two filters 
-
--- Field-ID_exposuretime_chipID.matched.sel.wcs.cat : A selected catalog based on the sharpness (-0.5<sharpness<0.5 corresponding to stellar sources) and the chi2 (<1.8) of the sources (matched again with a search radius of 2 pixels).  
-
--- Field-ID_exposuretime_chipID.matched.sel.candidates.cat : From the catalog of selected sources the best candidate sources are selected based on the presence of SII excess (SII4500-SII2000 < 0) and their signal-to-noise ratio (>5).  
-
--- *.reg : These are the corresponing ds9 region files.
