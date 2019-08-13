@@ -18,4 +18,14 @@ To run these you need a working installation of [IRAF](http://ds9.si.edu/site/Ho
   - identify best candidates based on their SII excess (<0) and their SNR (>5)
   
   Note: take care to properly set the paths to ds9 and stilts libray
-* __reduce_field_outout.notes__: this file describes the results/products of reduce_field.sh script
+
+The final results/products of reduce_field.sh and of the whole process are:
+ - Field-ID_SII-filter_exposuretime_chipID.fits : Final fully reduced images. The ones with large exposure times are the combination of individual exposures. See header for the description of each column.
+
+- Field-ID_exposuretime_chipID.matched.all.wcs.cat : The full catalog of matched sources (with a search radius of 2 pixels) identified in the two bands. 
+
+- Field-ID_exposuretime_chipID.matched.sel.wcs.cat : A selected catalog based on the sharpness (|sharpness|<0.5 corresponding to stellar sources) and the chi2 (<1.8) of the sources (matched again with a search radius of 2 pixels).  
+
+- Field-ID_exposuretime_chipID.matched.sel.candidates.cat : From the catalog of selected sources the best candidate sources are selected based on the presence of SII excess (SII4500-SII2000 < 0) and their SNR (>5).  
+
+- \*.reg : These are the corresponing ds9 region files.
